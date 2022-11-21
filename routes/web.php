@@ -13,6 +13,6 @@ use App\Http\Controllers\PostController;      //追加
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [PostController::class, 'index']);
+Route::get('/posts/{post}',[PostController::class, 'show']);
     //viewヘルパ:controller,web.phpからviewフォルダ内のファイルを表示したいときに使う
