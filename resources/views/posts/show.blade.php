@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1 class ="title">
-            {{ $post->title}}
+            {{$post->title}}
         </h1>
         <div class="content">
             <div class="content">
@@ -17,6 +17,7 @@
                 <p> {{$post->body}} </p>
         </div>
         <div class ="footer">
+            <div class="edit"><a href="/posts/{{ $post->id }}/edit">edit</a></div>
             <a href="/">戻る</a>
         </div>
     </body>
